@@ -1,0 +1,31 @@
+Module                  Size  Used by
+vboxnetflt             14802  2 
+vboxnetadp             17542  0 
+vboxdrv              1776879  6 vboxnetadp,vboxnetflt
+snd_hda_codec_hdmi     28105  1 
+asix                   20387  0 
+usbnet                 19005  1 asix
+snd_hda_codec_cirrus     7148  1 
+nouveau               943350  2 
+mxm_wmi                 1323  1 nouveau
+i915                  491290  1 
+wmi                     7723  2 mxm_wmi,nouveau
+ttm                    60207  1 nouveau
+intel_agp              10504  1 i915
+tg3                   147978  0 
+intel_gtt              11974  2 i915,intel_agp
+ptp                     7724  1 tg3
+drm_kms_helper         27023  2 i915,nouveau
+pps_core                6521  1 ptp
+snd_hda_intel          29000  7 
+drm                   216578  6 ttm,i915,drm_kms_helper,nouveau
+libphy                 18582  2 tg3,asix
+snd_hda_codec         119695  3 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_cirrus
+agpgart                25916  4 drm,ttm,intel_agp,intel_gtt
+ehci_pci                3776  0 
+ehci_hcd               46125  1 ehci_pci
+xhci_hcd               86023  0 
+snd_hwdep               5900  1 snd_hda_codec
+apple_gmux              5171  0 
+apple_bl                2800  1 apple_gmux
+video                  11024  3 i915,nouveau,apple_gmux
